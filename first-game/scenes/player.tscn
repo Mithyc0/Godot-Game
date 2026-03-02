@@ -198,7 +198,12 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 8.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -227,7 +232,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"roll",
-"speed": 10.0
+"speed": 14.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -288,14 +293,17 @@ radius = 5.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1699116682]
 z_index = 5
+collision_layer = 3
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=433000963]
 position = Vector2(1, -12)
 sprite_frames = SubResource("SpriteFrames_qlg0r")
-animation = &"idle"
+animation = &"jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=608905814]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_tuyoq")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
