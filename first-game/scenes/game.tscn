@@ -375,4 +375,4 @@ visibility_layer = 2
 shape = SubResource("WorldBoundaryShape2D_iywne")
 
 [node name="Area2D" parent="." unique_id=1597629159 instance=ExtResource("6_p57ef")]
-position = Vector2(1392, 48)
+position = Vector2(1392, 49)
