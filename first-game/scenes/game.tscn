@@ -311,6 +311,7 @@ _data = {
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=220123812]
 zoom = Vector2(4, 4)
 process_callback = 0
+limit_right = 1745
 limit_bottom = 110
 limit_smoothed = true
 position_smoothing_enabled = true
