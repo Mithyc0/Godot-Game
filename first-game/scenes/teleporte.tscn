@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b5eg6dxgv8ah0"]
+
+[ext_resource type="Script" uid="uid://bovr76nyeh5b1" path="res://scripts/teleporte.gd" id="1_hvcy4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bkdm"]
+size = Vector2(15, 15)
+
+[node name="Area2D" type="Area2D" unique_id=1597629159]
+script = ExtResource("1_hvcy4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=492580773]
+position = Vector2(7.5, 7.5)
+shape = SubResource("RectangleShape2D_6bkdm")
+debug_color = Color(1.540184e-06, 0.5870601, 0.77072895, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
