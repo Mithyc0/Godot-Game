@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://4y0iag1d8ktc" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://btvetxn3a0nfn" path="res://scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://b5eg6dxgv8ah0" path="res://scenes/teleporte.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://dqd8ypdt6lcti" path="res://scenes/green_slime.tscn" id="7_u5sy4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -376,3 +377,6 @@ shape = SubResource("WorldBoundaryShape2D_iywne")
 
 [node name="Area2D" parent="." unique_id=1597629159 instance=ExtResource("6_p57ef")]
 position = Vector2(1392, 48)
+
+[node name="GreenSlime" parent="." unique_id=1974453926 instance=ExtResource("7_u5sy4")]
+position = Vector2(840, 0)
