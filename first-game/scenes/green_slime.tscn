@@ -44,6 +44,7 @@ animations = [{
 size = Vector2(10, 14)
 
 [node name="GreenSlime" type="Node2D" unique_id=1974453926]
+z_index = 1
 script = ExtResource("1_0pvn7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1083885901]
