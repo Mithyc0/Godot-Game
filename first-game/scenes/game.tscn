@@ -309,6 +309,7 @@ sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 [node name="Game" type="Node2D" unique_id=888740379]
 
 [node name="Player" parent="." unique_id=507160348 instance=ExtResource("1_uwrxv")]
+position = Vector2(535, -21)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=220123812]
 zoom = Vector2(4, 4)
@@ -320,6 +321,9 @@ limit_bottom = 113
 limit_smoothed = true
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
+
+[node name="GameManager" type="Node" parent="." unique_id=1910865827]
+unique_name_in_owner = true
 
 [node name="Labels" type="Node" parent="." unique_id=547593954]
 
